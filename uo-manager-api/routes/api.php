@@ -9,6 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-
-// Esto genera automáticamente el CRUD completo (index, store, show, update, destroy)
 Route::apiResource('projects', ProjectController::class);
