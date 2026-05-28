@@ -1,0 +1,8 @@
+include:
+  - ./uo-manager-api/compose.yaml
+  - ./uo-manager-front/compose.yaml
+
+services:
+  laravel.test:
+    ports:
+      - "8000:80"

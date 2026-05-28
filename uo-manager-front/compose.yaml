@@ -1,0 +1,13 @@
+services:
+  uo-frontend:
+    container_name: uo-manager-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5174:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://127.0.0.1:8000/api
