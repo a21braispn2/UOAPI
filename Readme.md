@@ -52,7 +52,7 @@ composer install
 Copia el archivo `.env.example` a `.env` y configura la sección de la Base de Datos apuntando a Localhost (`127.0.0.1`) debido al flujo de red de Docker:
 ```ini
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
+DB_HOST=mysql
 DB_PORT=3306
 DB_DATABASE=uo_manager_api
 DB_USERNAME=sail
