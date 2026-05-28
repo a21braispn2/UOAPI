@@ -49,6 +49,9 @@ composer install
 ```
 ### 2. Configurar el archivo de Entorno (.env)
 Copia el archivo `.env.example` a `.env` y configura la sección de la Base de Datos apuntando a Localhost (`127.0.0.1`) debido al flujo de red de Docker:
+
+<div align="start">
+
 ```ini
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
