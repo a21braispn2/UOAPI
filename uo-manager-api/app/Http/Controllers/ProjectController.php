@@ -35,10 +35,10 @@ class ProjectController extends Controller
         'description' => 'nullable|string',
     ]);
 
-    // Creamos el proyecto en la base de datos de Docker
+    // Creamos el proyecto
     $project = Project::create($validated);
 
-    // Devolvemos el proyecto creado con código 201 (Created)
+    // Devolvemos el proyecto creado
     return response()->json($project, 201);
     }
 
